@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>teamigo</groupId>
+  <artifactId>ptsupdater</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>ptsupdater</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>8.3-603.jdbc3</version>
+    </dependency>
+    <dependency>
+      <groupId>teamigo</groupId>
+      <artifactId>ptsutils</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
+  <scm>
+    <connection>scm:git:git://github.com/TeAmigo/ptsupdater.git</connection>
+    <url>scm:git:git://github.com/TeAmigo/ptsupdater.git</url>
+    <developerConnection>scm:git:git://github.com/TeAmigo/ptsupdater.git</developerConnection>
+  </scm>
+  <distributionManagement>
+    <repository>
+      <id>release-repo</id>
+      <url>file:///home/rickcharon/.m2/repository</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshot-repo</id>
+      <url>file:///home/rickcharon/.m2/repository</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>2.0-beta-9</version>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
