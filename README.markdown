@@ -6,7 +6,7 @@ information in the postgresql quotes1min database.
 ### How to call ###
 
 Call with either 0 or 1 args, 0 updates all in db, 1 is a file for symbols to be updated.
-
+#### Example command line: java -jar /share/JavaDev/teamigo/ptsupdater/target/ptsupdater-1.2.jar ags2.csv #### 
 #### Example input file format (base-symbol, expiry, exchange, begin-datetime, end-datetime): ####
 
     ZB, 20110621, ECBOT, 2011-02-28 00:00, 2011-04-30 16:00

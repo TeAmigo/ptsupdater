@@ -1,0 +1,12 @@
+;; Object teamigo
+;; EDE project file.
+(ede-proj-project "teamigo"
+  :name "teamigo"
+  :file "Project.ede"
+  :targets (list 
+   (ede-proj-target-makefile-program "ptsutils"
+    :name "ptsutils"
+    :path ""
+    )
+   )
+  )
