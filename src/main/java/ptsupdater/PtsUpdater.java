@@ -162,7 +162,7 @@ public class PtsUpdater {
       pts.setContractInfoTable(SymbolMaxDateLastExpiry.createContractInfosFromFile(args[0]));
       pts.bringAllCurrent();
     } else {
-      System.err.println("Wrong # of args ( 0 or 3 required)");
+      System.err.println("Wrong # of args ( 0 or 1 required)");
       System.err.println("0 args to update, 1 arg as name of input file with ContractInfoLines");
       System.err.println("Format is symbol, expiry, exchange, beginDateTime, endDateTime");
       System.err.println("EndDateTime can be omitted, format for dates is yyyy-MM-dd hh:mm");
